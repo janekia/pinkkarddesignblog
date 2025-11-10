@@ -3,7 +3,7 @@ layout: base.njk
 title: Pinkkard Design Blog
 ---
 
-<section class="pd-hero pd-section">
+<section class="pd-hero pd-section pd-hero--spacious">
   <div class="wrap">
     <span class="pd-pill">Welcome</span>
     <h1 class="pd-display">I am Janekia Pinkard</h1>
@@ -12,7 +12,7 @@ title: Pinkkard Design Blog
 </section>
 
 <section class="posts">
-  <div class="wrap">
+  <div class="wrap wrap--narrow">
     {% set posts = [] %}
     {% for p in collections.all %}
       {% if p.inputPath and ("/posts/" in p.inputPath) %}
